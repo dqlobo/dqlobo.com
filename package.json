@@ -1,0 +1,26 @@
+{
+  "name": "dqlobo.com",
+  "version": "1.0.0",
+  "description": "David LoBosco's professional portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqlobo/dqlobo.com.git"
+  },
+  "keywords": [
+    "dqlobo",
+    "development"
+  ],
+  "author": "David LoBosco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dqlobo/dqlobo.com/issues"
+  },
+  "homepage": "https://github.com/dqlobo/dqlobo.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
