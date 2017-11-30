@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
+var bs = require('browser-sync').create();
 
 gulp.task('css', function () {
     return gulp.src('dev/css/*.css')
@@ -17,11 +18,18 @@ gulp.task('views', function () {
 	.pipe(gulp.dest('build/'));
 });
 
-var allTasks = ['css','js','views']
-gulp.task('watch', function() {
-    gulp.watch('dev/*', ['views']);
-    gulp.watch('dev/css/**/*', ['css']);
-    gulp.watch('dev/js/**/*', ['js']);
+gulp.task('browser-sync', function() {
+    bs.init({
+	server: {
+	    baseDir: "./build/"
+	}
+    });
+});
+
+gulp.task('watch', ['browser-sync'], function() {
+    gulp.watch('dev/*', ['views']).on('change', bs.reload);;
+    gulp.watch('dev/css/**/*', ['css']).on('change', bs.reload);;
+    gulp.watch('dev/js/*', ['js']).on('change', bs.reload);;
 });
 
 gulp.task('default', ['css', 'js', 'views'],function() {

@@ -21,6 +21,15 @@
   },
   "homepage": "https://github.com/dqlobo/dqlobo.com#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "autoprefixer": "^7.1.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
+    "postcss-partial-import": "^4.1.0",
+    "precss": "^2.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "browsersync": "0.0.1-security"
   }
 }
