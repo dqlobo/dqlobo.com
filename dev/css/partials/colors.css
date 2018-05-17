@@ -1,5 +1,5 @@
 $theme-color-primary: #0071bc;
 
 $theme-color-title: #000;
-$theme-color-subtitle: #808080;
-$theme-color-caption: #b3b3b3
+$theme-color-subtitle: #555; /* #808080; */
+$theme-color-caption: #ccc;;/* #b3b3b3; */
