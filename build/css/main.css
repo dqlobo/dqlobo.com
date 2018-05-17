@@ -1,69 +1,55 @@
 /* #808080; */
-
 /* #b3b3b3; */
-
 html, body, section, ul, li {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-
 body {
-    /* -webkit-transform: perspective(1000px) rotateY(-10deg); */
-    /* -moz-transform: rotate(90deg); */
-    /* -o-transform: rotate(90deg); */
-    /* -ms-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
-    background-color:#ffee00; /* $theme-color-subtitle; */
+    background-color: #ffee00;;
 }
-
 footer {
     color: #ccc;
     line-height:1.5em;
     font-weight:light;
 }
-
 h1 {
     margin: 0;
     padding:0;
     font-size:2.5em;
     font-weight: 400;
     line-height:1.2bem;
-    color: #000;
+    color: #333;
     font-family: 'Arvo', serif;
 }
-
 #title-area {
     margin: 30px 0 0 0;
 }
-
-h3, h4 {
+h2, h3, h4 {
     margin:10px;
     padding:0;
-    color: #555;
+    color: #777;
     font-family: 'Lato', sans-serif;
 }
-
+.no-margin {
+    margin-left: 0;
+}
 h4 {
     color: #ccc;
     line-height: 1.5em;
     font-size: 0.9em;
 }
-
 ul {
     margin:0;
     padding:0;
 }
-
 a:hover {
     text-decoration:underline;
 }
-
 a {
     text-decoration:none;
     color:#0071bc;
 }
-
 .content {
     margin: 70px auto;
     padding: 20px 40px;
@@ -78,12 +64,10 @@ a {
     /* transform-style: preserve-3d; */
 
 }
-
 .pill-btn:hover {
     background-color: #0071bc;
     color: white;
 }
-
 .pill-btn {
     background-color: clear;
     margin: 5px 10px 5px 0;
@@ -94,14 +78,11 @@ a {
     font-weight:bold;
     font-size: 1.5em;
 }
-
 ul.h-list li {
 	display: inline-block;
 	list-style: none;
     }
-
 /* extends */
-
 ul.social li {
 	display:inline-block;
 	list-style: none;
@@ -109,48 +90,39 @@ ul.social li {
 
 	position:relative;
     }
-
 ul.social li a {
 	    display:inline-block;
 	    position:relative;
 	    width:50px;
 	    height:50px;
 	}
-
 #links {
     margin: 20px 0 15px;
     padding:0;
 }
-
 #twitter {
     background:url( '../img/twitter.png' ) no-repeat;
     background-size:contain
 }
-
 #twitter:hover {
     background: url( '../img/twitter-over.png' ) no-repeat;
 }
-
 #linkedin {
     background:url( '../img/linkedin.png' ) no-repeat;
     background-size:contain
 
 }
-
 #linkedin:hover {
     background: url( '../img/linkedin-over.png' ) no-repeat;
 }
-
 #medium {
     background:url( '../img/medium.png' ) no-repeat;
     background-size:contain
 
 }
-
 #medium:hover {/* TODO fix image quality */
     background: url( '../img/medium-over.gif' ) no-repeat;
 }
-
 #bubbleCanvas {
     position: absolute;
     top: 0;
@@ -162,7 +134,6 @@ ul.social li a {
             transform: translateZ(-3000px);  /* Safari support for 3d animations and keeping stacking order */
 
 }
-
 @media (max-width: 700px) {
     #bubbleCanvas {
 	visibility: hidden;

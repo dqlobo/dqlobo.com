@@ -8,12 +8,7 @@ html, body, section, ul, li {
 }
 
 body {
-    /* -webkit-transform: perspective(1000px) rotateY(-10deg); */
-    /* -moz-transform: rotate(90deg); */
-    /* -o-transform: rotate(90deg); */
-    /* -ms-transform: rotate(90deg); */
-    /* transform: rotate(90deg); */
-    background-color:#ffee00; /* $theme-color-subtitle; */
+    background-color: $theme-color-secondary;;
 }
 
 footer {
@@ -36,11 +31,15 @@ h1 {
     margin: 30px 0 0 0;
 }
 
-h3, h4 {
+h2, h3, h4 {
     margin:10px;
     padding:0;
     color: $theme-color-subtitle;
     font-family: 'Lato', sans-serif;
+}
+
+.no-margin {
+    margin-left: 0;
 }
 
 h4 {
