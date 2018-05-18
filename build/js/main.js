@@ -84,7 +84,7 @@ function Bubble(name, highlightedColor, link=undefined, radius=50) {
 	if (this.highlighted != highlighted) {
 	    this.image = new Image();
 	    let ext = highlighted ? '-highlighted.gif' : '.gif';
-	    this.image.src = './img/bubbles/'+this.baseImageName + ext;
+	    this.image.src = './build/img/bubbles/'+this.baseImageName + ext;
 	}
 	this.highlighted = highlighted;
 	
