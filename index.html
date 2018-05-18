@@ -1,9 +1,52 @@
 <html>
   <head>
-    <meta /> <!-- META TAGS -->
-    <meta type="og:url" />  <!-- OPEN GRAPHTAGS -->
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>dqlobo</title>
+    <!-- Search Engine -->
+    <meta name="description" content="David LoBosco's home page">
+    <meta name="image" content="http://www.dqlobo.com/img/og.gif">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="dqlobo">
+    <meta itemprop="description" content="David LoBosco's home page">
+    <meta itemprop="image" content="http://www.dqlobo.com/img/og.gif">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="dqlobo">
+    <meta name="twitter:description" content="David LoBosco's home page">
+    <meta name="twitter:site" content="@dqlobo">
+    <meta name="twitter:creator" content="@dqlobo">
+    <meta name="twitter:image:src" content="http://www.dqlobo.com/img/tw.gif">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="dqlobo">
+    <meta name="og:description" content="David LoBosco's home page">
+    <meta name="og:image" content="http://www.dqlobo.com/img/og.gif">
+    <meta name="og:url" content="www.dqlobo.com">
+    <meta name="og:site_name" content="dqlobo">
+    <meta name="og:type" content="website">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
-    <link rel="stylesheet" href="./build/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- pre-load script? -->
     <!-- TODO add analytics -->
     <!-- font awesome? -->
@@ -13,12 +56,18 @@
     <div class="content">
       <header>
 	<h1>David LoBosco</h1>
-	<h3>entrepreneur | full-stack developer</h3>
-	<div>
-	  <h1>I solve problems using web and mobile apps.</h1>
-	  <h3>Co-Founder at
-	    <a href="https://llamalists.com">Llama</a>
-	  </h3>      
+	<h3 class="no-margin">entrepreneur | full-stack developer</h3>
+	<div id="title-area">
+	  <p><h1>I solve problems with web and mobile apps.</h1></p>
+	  <hr />
+	  <h3>Currently:
+	    Freelancing and
+	    <a href="https://www.flickr.com/photos/139357857@N02/albums">traveling</a>
+	  <h4>Previously: 
+	    Co-Founder at <a href="https://llamalists.com">Llama</a>,
+	    Member at <a href="https://startupshell.org">Startup Shell</a>,
+	    Computer Science at <a href="https://umd.edu">University of Maryland</a>	    
+	  </h4>      
 	</div>
       </header>
       <section>
@@ -30,7 +79,7 @@
 	  </ul>
 	  <ul class="h-list">
 	    <!-- <a href="#"><li class="pill-btn">about</li></a> -->
-	    <a href="#"><li class="pill-btn">contact</li></a>
+	    <a href="mailto:davidlobosco@gmail.com"><li class="pill-btn">contact</li></a>
 	  </ul>
 	</div> 
       </section>
@@ -42,9 +91,20 @@
        src="https://code.jquery.com/jquery-3.2.1.min.js"
        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
          crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./build/js/main.js"></script>
 
-    </script>
+    <a><canvas id="bubbleCanvas"></canvas></a>
+    <script type="text/javascript" src="js/main.js"></script>
 
   </body>
 </html>
+
+
+<!-- 
+
+Site Pages:
+- home
+- about?
+ - UMD CS, app dev background
+- 404
+
+ -->
