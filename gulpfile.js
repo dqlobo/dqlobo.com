@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var bs = require('browser-sync').create();
@@ -26,12 +28,12 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', gulp.series('browser-sync', function() {
     gulp.watch('dev/*', ['views']).on('change', bs.reload);;
     gulp.watch('dev/css/**/*', ['css']).on('change', bs.reload);;
     gulp.watch('dev/js/*', ['js']).on('change', bs.reload);;
-});
+}));
 
-gulp.task('default', ['css', 'js', 'views'],function() {
+gulp.task('default', gulp.series('css', 'js', 'views',function() {
 
-});
+}));
