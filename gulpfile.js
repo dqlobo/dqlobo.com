@@ -2,10 +2,13 @@
 
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
+var concat = require('gulp-concat');
 var bs = require('browser-sync').create();
+
 
 gulp.task('css', function () {
     return gulp.src('dev/css/*.css')
+    	.pipe( concat('main.css') )
         .pipe( postcss([ require('precss'), require('autoprefixer') ]) )
         .pipe( gulp.dest('build/css') );
 });
