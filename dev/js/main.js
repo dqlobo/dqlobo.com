@@ -147,9 +147,10 @@ function BubbleCanvas() {
 	this.bubbles = [
 	    new Bubble('llama', '#B24592', 'https://llamalists.com'),
 	    new Bubble('zap', '#0040d2', 'https://dailyzap.app'),
+	    new Bubble('blog', '#', 'https://blog.dqlobo.com'),
 	    new Bubble('llama', '#B24592', 'https://llamalists.com'),
 	    new Bubble('zap', '#0040d2', 'https://dailyzap.app'),
-	    
+	    new Bubble('blog', '#', 'https://blog.dqlobo.com'),
 
 	];
 	this.canvasElement = document.getElementById('bubbleCanvas');
