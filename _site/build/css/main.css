@@ -1,0 +1,165 @@
+/* #808080; */
+/* #b3b3b3; */
+html, body, section, ul, li {
+    margin: 0;
+    
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #ffee00;;
+}
+footer {
+    color: #ccc;
+    line-height:1.5em;
+    font-weight:light;
+}
+h1 {
+    margin: 0;
+    padding:0;
+    font-size:2.5em;
+    font-weight: 400;
+    line-height:1.2bem;
+    color: #333;
+    font-family: 'Arvo', serif;
+}
+#title-area {
+    margin: 30px 0 0 0;
+}
+h2, h3, h4 {
+    margin:10px;
+    padding:0;
+    color: #777;
+    font-family: 'Lato', sans-serif;
+}
+.no-margin {
+    margin-left: 0;
+}
+h4 {
+    color: #ccc;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+ul {
+    margin:0;
+    padding:0;
+}
+a:hover {
+    text-decoration:underline;
+}
+a {
+    text-decoration:none;
+    color:#0071bc;
+}
+.content {
+    margin: 70px auto;
+    padding: 20px 40px;
+    width: 450px;
+    max-width:80%;
+    position: relative;
+    background-color: white;
+    z-index: 100;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 20px 25px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 25px rgba(0,0,0,0.5);
+    /* transform-style: preserve-3d; */
+
+}
+.pill-btn:hover {
+    background-color: #0071bc;
+    color: white;
+}
+.pill-btn {
+    background-color: clear;
+    margin: 5px 10px 5px 0;
+    padding: 3px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #0071bc;
+    color: #0071bc;
+    font-weight:bold;
+    font-size: 1.5em;
+}
+ul.h-list li {
+	display: inline-block;
+	list-style: none;
+    }
+/* extends */
+ul.social li {
+	display:inline-block;
+	list-style: none;
+	margin: 0 20px 15px 0;
+
+	position:relative;
+    }
+ul.social li a {
+	    display:inline-block;
+	    position:relative;
+	    width:50px;
+	    height:50px;
+	}
+#links {
+    margin: 20px 0 15px;
+    padding:0;
+}
+#twitter {
+    background:url( '../img/twitter.png' ) no-repeat;
+    background-size:contain
+}
+#twitter:hover {
+    background: url( '../img/twitter-over.png' ) no-repeat;
+}
+#linkedin {
+    background:url( '../img/linkedin.png' ) no-repeat;
+    background-size:contain
+
+}
+#linkedin:hover {
+    background: url( '../img/linkedin-over.png' ) no-repeat;
+}
+#medium {
+    background:url( '../img/medium.png' ) no-repeat;
+    background-size:contain
+
+}
+#medium:hover {/* TODO fix image quality */
+    background: url( '../img/medium-over.gif' ) no-repeat;
+}
+#bubbleCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transform: translateZ(-3000px);
+            transform: translateZ(-3000px);  /* Safari support for 3d animations and keeping stacking order */
+
+}
+@media (max-width: 700px) {
+    #bubbleCanvas {
+	visibility: hidden;
+    }
+}
+@media (max-width: 500px) {
+    .content {
+	text-align: center;
+	margin: 5px auto;
+	width: auto;
+    }
+
+    header {
+	width: 100%;
+	text-align: center;
+    }
+
+    h3, h4 {
+	font-size: 1em;
+	margin: 0;
+    }
+    
+    #tagline {
+	font-size: 1.5em;
+	margin: 50px 0 20px;
+    }
+
+}

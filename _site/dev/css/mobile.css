@@ -1,0 +1,23 @@
+@media (max-width: 500px) {
+    .content {
+	text-align: center;
+	margin: 5px auto;
+	width: auto;
+    }
+
+    header {
+	width: 100%;
+	text-align: center;
+    }
+
+    h3, h4 {
+	font-size: 1em;
+	margin: 0;
+    }
+    
+    #tagline {
+	font-size: 1.5em;
+	margin: 50px 0 20px;
+    }
+
+}
