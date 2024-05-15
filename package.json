@@ -4,7 +4,8 @@
   "description": "David LoBosco's professional portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "homepage": "https://github.com/dqlobo/dqlobo.com#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.6",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
