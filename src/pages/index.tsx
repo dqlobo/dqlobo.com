@@ -4,13 +4,8 @@ import QRCode from "react-qr-code";
 import isMobile from "is-mobile";
 import classNames from "classnames";
 import { SocialIcon } from "react-social-icons";
-import { isBrowser } from "../utils";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const isMobileCached = React.useMemo(() => {
-    return isMobile();
-  }, []);
-
   const contactFileUrl = "https://dqlobo.com/static/contact.vcf";
 
   const containerRef = React.useRef<HTMLDivElement>(null);
@@ -56,8 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="bg-card bg-gradient-to-b from-transparent via-white via-60% to-white"></div>
         <a
           className={classNames(
-            "absolute right-8 top-6 flex flex-col items-center gap-1",
-            { disabled: !isMobileCached }
+            "absolute right-8 top-6 flex flex-col items-center gap-1"
           )}
           href={contactFileUrl}
         >
