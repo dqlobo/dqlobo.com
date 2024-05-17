@@ -11,11 +11,7 @@ const IndexPage: React.FC<PageProps> = () => {
     return isMobile();
   }, []);
 
-  const contactFileUrl = React.useMemo(() => {
-    if (!isBrowser()) return "";
-
-    return [window.location.origin, "/static/contact.vcf"].join("");
-  }, []);
+  const contactFileUrl = "https://dqlobo.com/static/contact.vcf";
 
   const containerRef = React.useRef<HTMLDivElement>(null);
   const cardRef = React.useRef<HTMLElement>(null);
