@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-500;
+  &:hover {
+    @apply text-blue-400;
+  }
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  @apply text-gray-500;
+}
+
+html {
+  background-color: gray;
+}
+
+.bg-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(50deg) grayscale(50%) ;
+}
+
+.bg-tiles {
+  background-image: url(../images/tiles.png);
+  background-size: cover;
+  opacity: 55%;
+}
+
+.bg-landscape {
+  background-image: url(../images/co-view-2.png);
+  background-size: cover;
+}
+
+.bg-main {
+  --blur-size: 4px;
+
+  filter: blur(var(--blur-size)) saturate(115%);
+  opacity: 60%;
+  position: absolute;
+  left: calc(var(--blur-size) * -2);
+  top: calc(var(--blur-size) * -2);
+  height: calc(100% + var(--blur-size) * 4);
+  width: calc(100% + var(--blur-size) * 4);
+}
+
