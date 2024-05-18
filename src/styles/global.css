@@ -4,15 +4,11 @@
 
 a {
   @apply text-blue-500;
+  cursor: pointer;
+  
   &:hover {
     @apply text-blue-400;
   }
-}
-
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-  @apply text-gray-500;
 }
 
 html {

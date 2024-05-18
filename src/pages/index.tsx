@@ -1,8 +1,6 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import QRCode from "react-qr-code";
-import isMobile from "is-mobile";
-import classNames from "classnames";
 import { SocialIcon } from "react-social-icons";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -50,10 +48,9 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="bg-card bg-tiles"></div>
         <div className="bg-card bg-gradient-to-b from-transparent via-white via-60% to-white"></div>
         <a
-          className={classNames(
-            "absolute right-8 top-6 flex flex-col items-center gap-1"
-          )}
+          className="z-10 absolute right-8 top-6 flex flex-col items-center gap-1"
           href={contactFileUrl}
+          target="_blank"
         >
           <QRCode value={contactFileUrl} size={100} />
           <span className="text-xs uppercase opacity-70">Contact Card</span>
