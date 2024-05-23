@@ -2,6 +2,7 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import QRCode from "react-qr-code";
 import { SocialIcon } from "react-social-icons";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage: React.FC<PageProps> = () => {
   const contactFileUrl = "https://dqlobo.com/static/contact.vcf";
@@ -40,12 +41,32 @@ const IndexPage: React.FC<PageProps> = () => {
       ref={containerRef}
       className="relative flex min-h-dvh items-center justify-center font-['Lato']"
     >
-      <div className="bg-main bg-landscape"></div>
+      <div className="bg-main">
+        <StaticImage
+          alt="landscape"
+          src="../images/co-view-2.png"
+          placeholder="dominantColor"
+          loading="eager"
+          layout="fullWidth"
+          width={200}
+          height={200}
+        />
+      </div>
       <main
         ref={cardRef}
         className="relative h-[252px] w-[420px] overflow-hidden rounded-md shadow-xl shadow-gray-800"
       >
-        <div className="bg-card bg-tiles"></div>
+        <div className="bg-card opacity-55">
+          <StaticImage
+            alt="abstract tiles"
+            src="../images/tiles.png"
+            placeholder="dominantColor"
+            loading="eager"
+            layout="fullWidth"
+            width={200}
+            height={200}
+          />
+        </div>
         <div className="bg-card bg-gradient-to-b from-transparent via-white via-60% to-white"></div>
         <a
           className="z-10 absolute right-8 top-6 flex flex-col items-center gap-1"

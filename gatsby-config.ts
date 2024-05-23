@@ -39,6 +39,8 @@ const config: GatsbyConfig = {
         display: "swap",
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
   ],
 };
 
