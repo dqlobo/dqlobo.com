@@ -48,8 +48,8 @@ const IndexPage: React.FC<PageProps> = () => {
           placeholder="dominantColor"
           loading="eager"
           layout="fullWidth"
-          width={200}
-          height={200}
+          transformOptions={{ fit: "cover" }}
+          style={{ height: "100%" }}
         />
       </div>
       <main

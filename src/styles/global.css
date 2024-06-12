@@ -5,7 +5,7 @@
 a {
   @apply text-blue-500;
   cursor: pointer;
-  
+
   &:hover {
     @apply text-blue-400;
   }
@@ -17,7 +17,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  filter: hue-rotate(50deg) grayscale(50%) ;
+  filter: hue-rotate(50deg) grayscale(50%);
 }
 
 .bg-tiles {
@@ -41,6 +41,7 @@ a {
   top: calc(var(--blur-size) * -2);
   height: calc(100% + var(--blur-size) * 4);
   width: calc(100% + var(--blur-size) * 4);
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -48,4 +49,3 @@ a {
     opacity: 20%;
   }
 }
-
