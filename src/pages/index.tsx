@@ -39,7 +39,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="relative flex min-h-dvh items-center justify-center font-['Lato']"
+      className="relative overflow-hidden flex min-h-dvh items-center justify-center font-['Lato']"
     >
       <div className="bg-main">
         <StaticImage
@@ -47,7 +47,7 @@ const IndexPage: React.FC<PageProps> = () => {
           src="../images/co-view-2.png"
           placeholder="dominantColor"
           loading="eager"
-          layout="fullWidth"
+          // layout="fullWidth"
           transformOptions={{ fit: "cover" }}
           style={{ height: "100%" }}
         />
@@ -100,12 +100,21 @@ const IndexPage: React.FC<PageProps> = () => {
                   bgColor="black"
                   style={iconSize}
                 />
+                <a href="https://checkenginelight.dqlobo.com" target="_blank">
+                  <StaticImage
+                    alt="blog"
+                    style={iconSize}
+                    src="../images/blog-icon.png"
+                    className="hover:opacity-50 hover:cursor-pointer"
+                  />
+                </a>
               </div>
               <a
-                className="lin cursor-not-allowed text-sm "
-                href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDdma2N0MzB0cWcxdXNxYXJhaDNwY20wdDRtOHRjaGVreGJ3cTVpdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o72FkiKGMGauydfyg/giphy.gif"
+                className="lin text-sm"
+                href="https://cal.com/dqlobo"
+                target="_blank"
               >
-                Continue to Blog &rsaquo;
+                Let&apos;s chat!
               </a>
             </div>
           </div>
